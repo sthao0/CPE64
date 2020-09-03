@@ -1,0 +1,11 @@
+module lab05part1(CLK,reset,Q,X,Y,W);
+input wire CLK, reset, X; output wire Y, W; output reg [2:0] Q;
+wire [2:0] D; //This is essentially a coordinate variable
+always @ (posedge CLK)
+if (reset == 1) Q <= D; else Q <= 4;
+assign D[2] = (~Q[2]&Q[1]&X)|(Q[2]&~Q[0]&X)|(Q[2]&~Q[1]&X);
+assign D[1] = (~Q[0]&X)|(X&~Q[2])|(X&~Q[1])|(Q[0]&~Q[1]&~Q[2])|(Q[0]&~X&Q[2]&Q[1]);
+assign D[0] = (~Q[2]&~Q[1]&~X)|(Q[1]&X)|(Q[2]&X);
+assign Y = (~Q[2]&Q[0])|(~Q[2]&~Q[1]&~X)|(Q[1]&~Q[0]&X)|(Q[2]&~Q[1]&X);
+assign W = (~Q[2]&Q[1])|(Q[2]&~Q[1])|(Q[1]&~Q[0]);
+endmodule

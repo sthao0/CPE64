@@ -1,0 +1,18 @@
+`timescale 1ns	/ 1ps
+module Lab4part6_tb();
+				reg [7:0] Q = 4'b0000;
+				wire D, clk;
+				integer i;
+				Lab4part6 uut (D,CLK,q, reset);
+				
+				initial begin
+					for(i = 0; i<= 15; i= i +1)
+						begin
+							q= q+1;
+							#50;
+						end
+						
+						$stop;
+				end
+				
+endmodule

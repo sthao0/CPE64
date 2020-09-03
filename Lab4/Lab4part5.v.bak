@@ -1,0 +1,4 @@
+module Lab4part5(d,q, clock, reset);
+
+	input D,reset, clock;
+	output reg[3:0]q; 

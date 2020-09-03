@@ -1,0 +1,12 @@
+`timescale 1ns	/ 1ps
+module Lab4part3(R,	S,	Q,	NQ);
+				input d,	clk;
+				output Q,	NQ;
+				wire R,S;
+				
+				assign Q = ~(R | NQ);	//	S	(SET)	is	active	LOW
+				assign NQ = ~(R | Q);	//	R	(RESET)	is	active	LOW
+				assign S = ~((!(d|S))|R|clk);
+				assign R = ~(clk | ~(r|~(d|s)));
+				
+endmodule

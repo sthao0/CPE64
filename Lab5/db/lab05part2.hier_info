@@ -1,0 +1,37 @@
+|lab05part2
+x => Mux0.IN3
+x => Mux1.IN3
+x => Mux2.IN2
+x => Mux0.IN4
+x => Mux1.IN4
+x => Mux2.IN3
+x => Mux0.IN5
+x => Mux1.IN5
+x => Mux2.IN4
+x => Mux0.IN6
+x => Mux1.IN6
+x => Mux2.IN5
+x => Mux3.IN7
+x => Mux1.IN7
+x => Mux2.IN6
+x => Mux0.IN7
+x => Mux2.IN7
+x => Mux1.IN2
+x => Mux2.IN1
+x => Mux3.IN6
+r => c.OUTPUTSELECT
+r => c.OUTPUTSELECT
+r => c.OUTPUTSELECT
+clk => c[0]~reg0.CLK
+clk => c[1]~reg0.CLK
+clk => c[2]~reg0.CLK
+c[0] << c[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c[1] << c[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] << c[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+n[0] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+n[1] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+n[2] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+me << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+mo << mo.DB_MAX_OUTPUT_PORT_TYPE
+
+

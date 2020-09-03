@@ -1,0 +1,32 @@
+module lab05part1_tb();
+	reg x, r, clk;
+	wire [2:0] c, n;
+	wire me, mo;
+	
+	lab05part1 uut(.x(x), .r(r), .clk(clk), .c(c), .n(n), .me(me), .mo(mo));
+	
+	initial begin
+		clk = 1'b0;
+		r = 1'b0;
+		x = 1'b0;
+		
+		#50;
+		r = 1'b1;
+		x = 1'b0;
+		
+		#50;
+		x = 1'b0;
+		
+		#50;
+		x = 1'b1;
+		
+		#50;
+		x = 1'b0;
+		$stop;
+	end
+	
+	always begin
+		#25;
+		clk = ~clk;
+	end
+endmodule

@@ -1,0 +1,36 @@
+|Lab4part6
+pin12out => pin12out.IN1
+CLK => CLK.IN1
+SDin => SDout[0]~reg0.DATAIN
+SDout[0] << SDout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDout[1] << SDout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDout[2] << SDout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDout[3] << SDout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDout[4] << SDout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDout[5] << SDout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDout[6] << SDout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SDout[7] << SDout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4part6|debounce:g0
+clk => clean~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+dirty => always0.IN1
+clean <= clean~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

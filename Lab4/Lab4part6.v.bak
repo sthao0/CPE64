@@ -1,0 +1,11 @@
+module Lab4part6(d,clk,reset,Q);
+	input d,clk,reset;
+	output reg [7:0] Q;
+	debounce g0(d,clk,dclk);
+		always@(posedge clk)
+			begin
+				Q<= Q << 1;
+				Q{0]<=reset;
+				
+				end
+endmodule 

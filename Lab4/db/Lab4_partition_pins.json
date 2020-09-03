@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SDout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SDout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SDout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SDout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SDout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SDout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SDin",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "pin12out",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

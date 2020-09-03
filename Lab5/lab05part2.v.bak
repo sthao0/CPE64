@@ -1,0 +1,116 @@
+module lab05part2(CLK,reset,X,W,Y,Q);
+input wire reset, CLK, X;
+output reg Y, W;
+output reg [2:0] Q;
+reg [2:0]D;
+
+always @(posedge CLK) Q <= D; //Ensures that everything doesn't change at once
+always @ (CLK)// changes at anytime
+if (~reset)
+D <= 4; //Doesn't matter if 4,5,6 because they're all the same
+else
+begin
+case (Q)
+0:begin
+W <=0;
+if (X)
+begin
+
+D <=2; Y <=0;
+end
+else if(~X)
+begin
+D <=1; Y <= 1;
+end
+
+end
+1:begin
+W <=0;
+if (X)
+begin
+D <=2; Y <=1;
+end
+else if(~X)
+begin
+D <=3; Y <= 1;
+end
+
+end
+2:begin
+W <=1;
+if (X)
+begin
+D <=7; Y <=1;
+end
+else if(~X)
+begin
+D <=0; Y <= 0;
+end
+
+end
+3:begin
+W <=1;
+if (X)
+begin
+D <=7; Y <=1;
+end
+else if(~X)
+begin
+D <=0; Y <= 1;
+end
+
+end
+
+4:begin
+W <=1;
+if (X)
+begin
+D <=7; Y <=1;
+end
+else if(~X)
+begin
+D <=0; Y <= 0;
+end
+
+end
+5:begin
+W <=1;
+if (X)
+begin
+D <=7; Y <=1;
+end
+else if(~X)
+begin
+D <=0; Y <= 0;
+end
+
+end
+6:begin
+W <=1;
+if (X)
+begin
+D <=7; Y <=1;
+end
+else if(~X)
+begin
+D <=0; Y <= 0;
+end
+
+end
+7:begin
+W <=0;
+if (X)
+begin
+D <=1; Y <=0;
+end
+else if(~X)
+begin
+
+D <=2; Y <= 0;
+end
+
+end
+
+endcase
+end
+endmodule

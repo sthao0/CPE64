@@ -1,0 +1,142 @@
+module lab05part2 (x, r, clk, c, n, me, mo);
+	input x,r,clk;
+	output reg [2:0] c;
+	output reg [2:0] n;
+	output reg me, mo;
+
+	parameter s0 = 3'b000,
+				s1 = 3'b001, s2 = 3'b010,
+				s3 = 3'b011, s4 = 3'b100,
+				s5 = 3'b101, s6 = 3'b110,
+				s7 = 3'b111;
+	
+	always@(c or x)
+		begin 
+			case(c)
+				s0 : begin
+				mo<=1;
+
+				if(x==1) begin 
+					n<=s1;
+					me <= 0;
+				end
+				else if (x==0)begin 
+					n<=s1;
+					me <= 1;
+				end
+				else n <= s4;
+			end
+	
+			s1 : begin
+			mo<=0;
+			
+				if(x==1) begin 
+					n<=s2;
+					me <= 1;
+				end
+				else if (x==0)begin 
+					n<=s3;
+					me <= 1;
+				end
+				else n <=s4;
+				
+			end
+			
+			s2 : begin
+			mo<=1;
+			
+				if(x==1) begin 
+					n<=s7;
+					me <= 1;
+				end
+				else if (x==0) begin 
+					n<=s0;
+					me <= 0;
+				end
+				else n <=s4;
+			
+			end
+			
+			s3 : begin
+			mo<=1;
+			
+				if(x==1) begin 
+					n<=s7;
+					me <= 1;
+				end
+				else if (x==0) begin 
+					n<=s0;
+					me <= 1;
+				end
+				else n <=s4;
+			
+			end
+			
+			s4 : begin
+			mo <= 1;
+				
+				if(x==1) begin 
+					n<=s7;
+					me <= 1;
+				end
+				else if (x==0) begin 
+					n<=s0;
+					me <= 1;
+				end
+				else n <= s4;
+			
+			end
+			
+			s5 : begin
+			mo <= 1;
+				
+				if(x==1) begin 
+					n<=s7;
+					me <= 1;
+				end
+				else if (x==0) begin 
+					n<=s0;
+					me <= 1;
+				end
+				else n <= s4;
+			
+			end
+			
+			s6 : begin
+			mo <= 1;
+				
+				if(x==1) begin 
+					n<=s7;
+					me <= 1;
+				end
+				else if (x==0) begin 
+					n<=s0;
+					me <= 1;
+				end
+				else n <= s4;
+			end
+			
+			s7 : begin
+			mo <= 0;
+			
+				if(x==1) begin 
+					n<=s1;
+					me <= 0;
+				end
+				else if (x==0) begin 
+					n<=s2;
+					me <= 0;
+				end
+				else n <= s4;
+			end
+			endcase
+		end
+	
+	
+	always@(posedge clk)
+		begin 
+			if(r) c<=n;
+			else c<=s4;
+		end
+endmodule
+	

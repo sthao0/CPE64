@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/thaos/Desktop/Lab4/simulation/modelsim
+vdebounce
+!s110 1555122468
+!i10b 1
+!s100 KE3lK4B23oPfDiW4O9P[_3
+IkXY96i8NST[nA?;VWSb`=0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1555121856
+8C:/Users/thaos/Desktop/Lab4/debounce.v
+FC:/Users/thaos/Desktop/Lab4/debounce.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1555122468.000000
+!s107 C:/Users/thaos/Desktop/Lab4/debounce.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/thaos/Desktop/Lab4|C:/Users/thaos/Desktop/Lab4/debounce.v|
+!i113 1
+Z3 o-vlog01compat -work work
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/thaos/Desktop/Lab4
+Z5 tCvgOpt 0
+vLab4part6
+Z6 !s110 1555122469
+!i10b 1
+!s100 07JTNe=W4Hgzbl3L[9Ai?1
+I^SX3GWWMcd]4JN@1LDUfj1
+R1
+R0
+w1555122124
+8C:/Users/thaos/Desktop/Lab4/lab4part6.v
+FC:/Users/thaos/Desktop/Lab4/lab4part6.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z7 !s108 1555122469.000000
+!s107 C:/Users/thaos/Desktop/Lab4/lab4part6.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/thaos/Desktop/Lab4|C:/Users/thaos/Desktop/Lab4/lab4part6.v|
+!i113 1
+R3
+R4
+R5
+n@lab4part6
+vLab4part6_tb
+R6
+!i10b 1
+!s100 <3[GCzK`hP]:DDWonFUkj1
+Id0KQ=YC`dnP_ZodC7`M1j2
+R1
+R0
+w1555122381
+8C:/Users/thaos/Desktop/Lab4/Lab4part6_tb.v
+FC:/Users/thaos/Desktop/Lab4/Lab4part6_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/thaos/Desktop/Lab4/Lab4part6_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/thaos/Desktop/Lab4|C:/Users/thaos/Desktop/Lab4/Lab4part6_tb.v|
+!i113 1
+R3
+R4
+R5
+n@lab4part6_tb

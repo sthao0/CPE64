@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pin12out'
+Slack : -2.310
+TNS   : -17.790
+
+Type  : Slow 1200mV 85C Model Setup 'debounce:g0|clean'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'debounce:g0|clean'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pin12out'
+Slack : 0.570
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pin12out'
+Slack : -3.000
+TNS   : -20.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:g0|clean'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Slow 1200mV 0C Model Setup 'pin12out'
+Slack : -1.952
+TNS   : -14.316
+
+Type  : Slow 1200mV 0C Model Setup 'debounce:g0|clean'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'debounce:g0|clean'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pin12out'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pin12out'
+Slack : -3.000
+TNS   : -20.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:g0|clean'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Setup 'pin12out'
+Slack : -0.851
+TNS   : -6.659
+
+Type  : Fast 1200mV 0C Model Setup 'debounce:g0|clean'
+Slack : 0.563
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'debounce:g0|clean'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pin12out'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pin12out'
+Slack : -3.000
+TNS   : -20.985
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:g0|clean'
+Slack : -1.000
+TNS   : -8.000
+
+------------------------------------------------------------

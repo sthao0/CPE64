@@ -1,0 +1,27 @@
+`timescale 1ns	/ 1ps
+module Lab4part4_tb();
+				reg clk,	d;
+				wire Q, NQ;
+				
+				Lab4part4 uut (clk, d, R, S, Q,NQ);
+				
+				initial begin
+								clk = 1'b1;
+								d = 1'b1;
+								
+								#100;
+								d = 1'b1;	//	S	=	0;
+								clk = 1'b1;	//	R	=	0;
+								#100;
+								d = 1'b1;	//	S	=	0;
+								clk = 1'b0;	//	R	=	1;
+								#100;
+								d = 1'b0;	//	S	=	1;
+								clk = 1'b1;	//	R	=	0;
+								#100;
+								d = 1'b0;	//	S	=	1;
+								clk = 1'b0;	//	R	=	1;
+								
+								#100;
+				end
+endmodule

@@ -1,0 +1,15 @@
+module Lab4part4(pr,cr,clk,d,q,qn, s,r);
+	input pr,cr,clk,d;
+	output q,qn,r,s;
+	
+	wire in1,in2,in3,in4,pr, cr,clk,d,q,qn;
+	
+	assign q = ~(qn & pr & s);
+	assign qn = ~(r & in2 & q);
+	assign s = ~(in1 & cr & clk);
+	assign r = cr;
+	assign in1 = ~(pr & in3 & s);
+	assign in2 = ~(clk & in3 & s);
+	assign in3 = ~(in2 & d & r);
+
+endmodule 
